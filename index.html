@@ -38,9 +38,14 @@ console.log(products)
 
 let addToCart = []
 const productarr = Object.keys(products)
+
 function shoppingCart(){
     for(let i = 0;i<productarr.length; i++)
-    addToCart.push(productarr[i])
+    product = productarr[i]
+productsel = products[product]
+    addToCart.push(productarr)
+
+    
 }
 shoppingCart()
 console.log(addToCart)
