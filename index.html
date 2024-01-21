@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+// list of available products.
+let products ={
+
+    product1 : {
+id: "product001",
+name: "bag",
+price: 100,
+description: "product avaliable via prescrition" 
+},
+
+product2 : {
+id: "product002",
+name: "shoe",
+price: 200,
+description: "product avaliable via prescrition" 
+},
+   product3 : {
+id: "product300",
+name: "dress",
+price: 300,
+description: "product avaliable via prescrition" 
+}
+
+}
+console.log(products)
+
+// ADDTOCART
+
+let addToCart = []
+const productarr = Object.keys(products)
+function shoppingCart(){
+    for(let i = 0;i<productarr.length; i++)
+    addToCart.push(productarr[i])
+}
+shoppingCart()
+console.log(addToCart)
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
